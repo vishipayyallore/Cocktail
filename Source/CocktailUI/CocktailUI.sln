@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{08CB1307-BE32-4DF9-85B4-CF4D642DC137}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{C8610634-ABDD-497F-9225-F0883210CE3D}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CocktailUI", "src\CocktailUI\CocktailUI.xproj", "{29F02E6D-E92D-4E01-AFE4-E44B06E2D533}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29F02E6D-E92D-4E01-AFE4-E44B06E2D533}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F02E6D-E92D-4E01-AFE4-E44B06E2D533}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F02E6D-E92D-4E01-AFE4-E44B06E2D533}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F02E6D-E92D-4E01-AFE4-E44B06E2D533}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{29F02E6D-E92D-4E01-AFE4-E44B06E2D533} = {08CB1307-BE32-4DF9-85B4-CF4D642DC137}
+	EndGlobalSection
+EndGlobal
