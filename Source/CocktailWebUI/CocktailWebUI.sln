@@ -12,6 +12,19 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "CocktailWebUI", "src\CocktailWebUI\CocktailWebUI.xproj", "{A12C2055-C4A4-48B8-B4D3-F6D423DA6FFD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{29CB6D87-7437-4C9F-AEBC-1DFCABFC865C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0293397B-D256-4D16-ACFE-805F195D316F}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{EB889700-37B8-4417-BC56-7A14A9F5CFB0}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\CocktailWebUIDockerVM.json = PublishScripts\Templates\CocktailWebUIDockerVM.json
+		PublishScripts\Templates\CocktailWebUIDockerVM.param.dev.json = PublishScripts\Templates\CocktailWebUIDockerVM.param.dev.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -28,5 +41,7 @@ Global
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{A12C2055-C4A4-48B8-B4D3-F6D423DA6FFD} = {25E9C4F6-8E65-4496-899D-4777CE9242CD}
+		{0293397B-D256-4D16-ACFE-805F195D316F} = {29CB6D87-7437-4C9F-AEBC-1DFCABFC865C}
+		{EB889700-37B8-4417-BC56-7A14A9F5CFB0} = {29CB6D87-7437-4C9F-AEBC-1DFCABFC865C}
 	EndGlobalSection
 EndGlobal
