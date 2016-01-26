@@ -32,3 +32,7 @@ textarea {
         z-index: 10 !important;
     }
 }
+
+hr{
+   border: 1px solid #2c3e50;
+}
