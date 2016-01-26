@@ -8,13 +8,15 @@
     <title>@ViewData["Title"] - Cocktail Web UI</title>
 
     <environment names="Development">
-        <link rel="stylesheet" href="~/lib/bootswatch/flatly/bootstrap.css" />
+        <link rel="stylesheet" href="~/lib/bootswatch/flatly/bootstrap.css"/>
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="~/css/site.css" />
     </environment>
     <environment names="Staging,Production">
         <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/bootstrap/3.3.5/css/bootstrap.min.css"
               asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
-              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute"/>
+        <link rel="stylesheet" href="~/lib/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="~/css/site.min.css" asp-append-version="true" />
     </environment>
     @Html.ApplicationInsightsJavaScript(TelemetryConfiguration)
@@ -42,10 +44,17 @@
     </div>
     <div class="container body-content">
         @RenderBody()
-        <hr style="background-color: blue" />
+        @*<hr style="background-color: blue" />*@
         <footer>
-            <p>Copyright &copy; @DateTime.Now.Year Cocktail Web UI. All Rights Reserved</p>
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                &nbsp;<p style="color: white">Copyright &copy; @DateTime.Now.Year Cocktail Web UI. All Rights Reserved</p>
+            </div>
         </footer>
+        @*<div id="footer" >
+            <div class="navbar navbar-default navbar-fixed-bottom">
+                <p style="color: white">Copyright &copy; @DateTime.Now.Year Cocktail Web UI. All Rights Reserved</p>
+            </div>
+        </div>*@
     </div>
 
     <environment names="Development">
