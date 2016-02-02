@@ -1,7 +1,7 @@
-FROM microsoft/aspnet:1.0.0-rc1-final
+FROM windowsservercore
 
 ADD . /app
 
 WORKDIR /app/approot
 
-ENTRYPOINT ["./web"]
+ENTRYPOINT ["./web.cmd"]
