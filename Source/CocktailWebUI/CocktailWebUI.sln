@@ -16,12 +16,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishSc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scripts", "Scripts", "{0293397B-D256-4D16-ACFE-805F195D316F}"
 	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup-2.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup-2.ps1
+		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup-3.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup-3.ps1
 		PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1 = PublishScripts\Scripts\Deploy-DockerAzureResourceGroup.ps1
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Templates", "Templates", "{EB889700-37B8-4417-BC56-7A14A9F5CFB0}"
 	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Templates\CocktailWebUIDockerVM-2.json = PublishScripts\Templates\CocktailWebUIDockerVM-2.json
+		PublishScripts\Templates\CocktailWebUIDockerVM-3.json = PublishScripts\Templates\CocktailWebUIDockerVM-3.json
 		PublishScripts\Templates\CocktailWebUIDockerVM.json = PublishScripts\Templates\CocktailWebUIDockerVM.json
+		PublishScripts\Templates\CocktailWebUIDockerVM.param.dev-2.json = PublishScripts\Templates\CocktailWebUIDockerVM.param.dev-2.json
+		PublishScripts\Templates\CocktailWebUIDockerVM.param.dev-3.json = PublishScripts\Templates\CocktailWebUIDockerVM.param.dev-3.json
 		PublishScripts\Templates\CocktailWebUIDockerVM.param.dev.json = PublishScripts\Templates\CocktailWebUIDockerVM.param.dev.json
 	EndProjectSection
 EndProject
