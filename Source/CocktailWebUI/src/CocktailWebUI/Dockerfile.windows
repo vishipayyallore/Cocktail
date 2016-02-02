@@ -4,4 +4,4 @@ ADD . /app
 
 WORKDIR /app/approot
 
-ENTRYPOINT ["./web.cmd"]
+ENTRYPOINT ["cmd.exe", "/k", "web.cmd"]
