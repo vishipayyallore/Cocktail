@@ -2,10 +2,17 @@
   "name": "cocktailnodeapi",
   "version": "1.0.0",
   "description": "Node JS Web REST API with MongoDb backend",
-  "main": "index.js",
+  "main": "application.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vishipayyallore/Cocktail.git"
+  },
+  "author": "Viswanatha Swamy",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.13.4"
+  }
 }
