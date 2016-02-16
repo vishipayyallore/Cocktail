@@ -10,7 +10,8 @@ gulp.task('default', function(){
         ext: 'js',
         env: {
             PORT: 8080,
-            ENV: 'development'
+            ENV: 'development',
+            MONGO_URI: "mongodb://localhost/cocktaildev"
         },
         ignore: ['./node_modules/**']
     })
