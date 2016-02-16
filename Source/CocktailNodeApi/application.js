@@ -1,8 +1,15 @@
+'use strict';
+
 var express = require('express'),
     mongoose = require('mongoose'),
-    bodyParse = require('body-parser');
+    bodyParser = require('body-parser');
 
 var application = express();
+
+application.use(bodyParser.json());
+application.use(bodyParser.urlencoded({
+    extended: true
+}));
 
 application.get('/', function(req, res){
     res.send('Welcome to Cocktail NodeJS API!');
@@ -13,5 +20,7 @@ application.get('/HealthCheck', function(req, res){
 });
 
 var server = application.listen(3000, function() {
-    console.log('Server running at http://127.0.0.1:3000/');
+    console.log('Server running at http://127.0.0.1:'+ process.env.PORT + '/ in (' + process.env.ENV + ') environment' );
 });
+
+module.exports = application;
