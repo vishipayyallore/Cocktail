@@ -8,7 +8,7 @@ application.get('/', function(req, res){
     res.send('Welcome to Cocktail NodeJS API!');
 });
 
-application.get('/api/HealthCheck', function(req, res){
+application.get('/HealthCheck', function(req, res){
     res.send('Cocktail NodeJS API -> Health Check is Good!');
 });
 

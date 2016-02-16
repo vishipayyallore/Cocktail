@@ -3,6 +3,7 @@ var mongoose = require('mongoose'),
     
 var productModel = new Schema({
     id: {type: String},
+    name: {type: String},
     manufacturer: {type: String}
 });
 
