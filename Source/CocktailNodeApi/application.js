@@ -21,8 +21,9 @@ application.get('/HealthCheck', function(req, res){
     res.send('Cocktail NodeJS API -> Health Check is Good!');
 });
 
-var server = application.listen(3000, function() {
-    console.log('Server running at http://127.0.0.1:'+ process.env.PORT + '/ in (' + process.env.ENV + process.env.MONGO_URI + ') environment' );
+var portNumber = process.env.PORT || 8090;
+var server = application.listen(portNumber, function() {
+    console.log('Server running at http://127.0.0.1:'+ portNumber + '/ in (' + process.env.ENV + process.env.MONGO_URI + ') environment' );
 });
 
 module.exports = application;
